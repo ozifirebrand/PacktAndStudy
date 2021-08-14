@@ -10,7 +10,6 @@ display sum of four years after the first year
 initialise to zero when adding
 initialise to one when multiplying
 */
-
 package SelfWork;
 public class HackathonExercise1 {
     double totalTuitionAfterComputationFor10Years = 0;
@@ -18,6 +17,7 @@ public class HackathonExercise1 {
     int numberOfYears = 0;
     int rate = 5;
     double initialTuitionBeforeAddingInterest = 10000;
+
 
 
     public void setSum() {

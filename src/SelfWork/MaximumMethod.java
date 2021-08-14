@@ -16,6 +16,7 @@ public class MaximumMethod {
     public static double maximum(double firstNumber, double secondNumber,
     double thirdNumber){
 
+
         double maximumValue = firstNumber;
         if ( secondNumber> maximumValue ){
             maximumValue = secondNumber;
