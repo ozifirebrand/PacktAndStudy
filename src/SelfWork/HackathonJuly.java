@@ -14,12 +14,13 @@ How?
  */
 public class HackathonJuly {
     public static void main(String[] args) {
-        argsMethod(9, 2,2, 4,7,3);
+        argsMethod(101, 2,2, 4,7,3, 99, 8);
     }
+
     public static void argsMethod(int twoSumNumber, int ... twoSumArray){
-        for (int index = 0; index<twoSumArray.length; index++){
+        for (int index = 0; index < twoSumArray.length; index++){
             int anInteger = twoSumNumber - twoSumArray[index];
-            for (int index2 = 0 ; index2< twoSumArray.length && index2!=index; index2++){
+            for (int index2 = 0 ; index2 < twoSumArray.length && index2 != index; index2++){
                 if( twoSumArray[index2] == anInteger){
                     System.out.print(index2+" "+ index);
                     break;
