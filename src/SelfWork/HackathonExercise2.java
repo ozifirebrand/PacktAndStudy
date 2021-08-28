@@ -19,6 +19,7 @@ public static void main(String[] args){
         System.out.println("Enter a student's name and score");
         studentName = scannerObject.next();
         studentScore = scannerObject.nextInt();
+        numberOfStudents++;
 
     }
 
