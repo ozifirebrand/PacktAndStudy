@@ -10,9 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class HackathonJulyTest {
     @Test
     public void testTwoSumMethod() {
-        //given
-        HackathonJuly.argsMethod(67, 54,33,34,33);
 
-        Assertions.assertEquals("[2, 3]", Arrays.toString(HackathonJuly.argsMethod(67, 54, 33, 34, 33)));
+        Assertions.assertEquals("[0, 1]", Arrays.toString(HackathonJuly.argsMethod(67, 34, 33, 35, 3)));
     }
 }
