@@ -1,4 +1,7 @@
 package SelfWork;
+
+import java.util.Arrays;
+
 /*Write a program that takes in two arguments
 One is an array, the other is an integer such that the sum of two numbers
 in the array is equal to the second argument
@@ -14,18 +17,20 @@ How?
  */
 public class HackathonJuly {
     public static void main(String[] args) {
-        argsMethod(101, 2,2, 4,7,3, 99, 8);
+        System.out.println(Arrays.toString(argsMethod(101, 2, 2, 4, 7, 3, 99, 8)));
     }
 
-    public static void argsMethod(int twoSumNumber, int ... twoSumArray){
+    public static int [] argsMethod(int twoSumNumber, int ... twoSumArray){
+        int [] newTwoSum = new int[2];
         for (int index = 0; index < twoSumArray.length; index++){
             int anInteger = twoSumNumber - twoSumArray[index];
             for (int index2 = 0 ; index2 < twoSumArray.length && index2 != index; index2++){
                 if( twoSumArray[index2] == anInteger){
-                    System.out.print(index2+" "+ index);
+                     newTwoSum = new int[]{index2, index};
                     break;
                 }
             }
         }
+      return newTwoSum;
     }
 }
