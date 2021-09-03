@@ -11,6 +11,7 @@ class HackathonJulyTest {
     @Test
     public void testTwoSumMethod() {
 
-        Assertions.assertEquals("[0, 1]", Arrays.toString(HackathonJuly.argsMethod(67, 34, 33, 35, 3)));
+        Assertions.assertEquals("[0, 1]", Arrays.toString(
+                HackathonJuly.argsMethod(67, 34, 33, 35, 3)));
     }
 }
