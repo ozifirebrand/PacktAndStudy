@@ -19,28 +19,20 @@ public class MoneyProcessingProgram {
 //int principal;
 //int numberOfYears;
 
-    public static BigDecimal calculateAmount() {
+    public static void main(String[] args) {
         BigDecimal principal = new BigDecimal(1000.00);
-
-        BigDecimal amountOnDeposit = principal.multiply(calculateRate());
-        return amountOnDeposit;
-    }
-
-    private static BigDecimal calculateRate(){
-        BigDecimal one = new BigDecimal(1);
         BigDecimal rate = new BigDecimal(.05);
-        BigDecimal newRateComputation= null;
+
+        BigDecimal one = new BigDecimal(1);
+
         BigDecimal constantRateComputation = one.add(rate);
         BigDecimal rateComputation = new BigDecimal(1);
-        for (int numberOfYears= 0; numberOfYears <10; numberOfYears++){
-           newRateComputation = rateComputation.multiply(constantRateComputation);
-           rateComputation = newRateComputation;
-            System.out.println(newRateComputation);
-        }
-        return newRateComputation;
-    }
 
-    public static void main(String[] args) {
-        System.out.println(calculateAmount());
+        for (int numberOfYears= 1; numberOfYears <= 10; numberOfYears++){
+            BigDecimal newRateComputation = rateComputation.multiply(constantRateComputation);
+            BigDecimal amountOnDeposit = principal.multiply(newRateComputation);
+           rateComputation = newRateComputation;
+            System.out.printf("%2d %10.2f%n", numberOfYears, amountOnDeposit);
+        }
     }
 }
