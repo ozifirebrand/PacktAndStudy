@@ -14,11 +14,7 @@ public class MoneyProcessingProgram {
 // r is the annual interest rate,
 // n is the number of years and
 // a is the amount on deposit at the end of the nth year.
-//int amountOnDeposit;
-//int rate;
-//int principal;
-//int numberOfYears;
-
+//
     public static void main(String[] args) {
         BigDecimal principal = new BigDecimal(1000.00);
         BigDecimal rate = new BigDecimal(.05);
