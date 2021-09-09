@@ -1,10 +1,10 @@
 package SelfWork;
 
-public class Arrrays {
+public class AttemptingArraysConcat {
     private static StringBuilder arrays(){
-        String[] arrayGDSAJUList = {"E", "S", "P","J"};
+        String[] personalityTypeLetters = {"E", "S", "P","J"};
         StringBuilder finalAnswer= new StringBuilder();
-        for (String letter : arrayGDSAJUList ){
+        for (String letter : personalityTypeLetters ){
             finalAnswer.append(letter);
         }
         return finalAnswer;
