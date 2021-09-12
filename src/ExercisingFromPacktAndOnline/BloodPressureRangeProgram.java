@@ -9,7 +9,7 @@ public class BloodPressureRangeProgram {
     }
     public static void evaluateSystolic(){
         int input = input();
-        boolean isSystolic = 90 <= input;
+        boolean isSystolic = 90 <= input && input <= 120;
         boolean isAboveSystolic = input > 120;
         if ( isSystolic ){
             System.out.println("Perfect!");
