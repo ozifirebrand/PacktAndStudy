@@ -10,4 +10,7 @@ public class Tab extends Computer {
     public void setScreenSize(double screenSize) {
         this.screenSize = screenSize;
     }
+    public void whatIsIt(){
+        System.out.println("It is a tablet!");
+    }
 }

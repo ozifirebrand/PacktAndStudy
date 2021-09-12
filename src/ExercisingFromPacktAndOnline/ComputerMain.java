@@ -5,5 +5,8 @@ public class ComputerMain {
         Tab tablet = new Tab();
         tablet.setCpuSpeed(25);
         System.out.println(tablet.getCpuSpeed());
+        tablet.whatIsIt();
+        Computer myTab = new Tab();
+        myTab.whatIsIt();
     }
 }
