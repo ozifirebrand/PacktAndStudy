@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class WordTool {
         WordTool(){}
 
@@ -21,6 +23,19 @@ public class WordTool {
             return count;
         }
 
+        public int frequencyOfACharacter(String input, char characterInString){
+            int frequencyOfCharacterInSentence = 0;
+            String [] separatedSentence = input.split("\\s");
+            for (String word : separatedSentence) {
+                char[] characters = word.toCharArray();
+                for (char character : characters) {
+                    if ( character == characterInString )
+                        frequencyOfCharacterInSentence++;
+                }
+            }
+            return frequencyOfCharacterInSentence;
+        }
+
         public static void main(String[] args) {
             WordTool wt = new WordTool();
             String text = "The river carried the memories from her childhood. ";
@@ -28,5 +43,6 @@ public class WordTool {
             System.out.println("Total words: " +wt.wordCount(text));
             System.out.println("Total symbols (w.spaces): " +wt.symbolCount(text, true));
             System.out.println("Total symbols (wo.spaces): " +wt.symbolCount(text, false));
+            System.out.println("The frequency of e: " +wt.frequencyOfACharacter(text, 'e'));
         }
 }
