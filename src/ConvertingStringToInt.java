@@ -1,5 +1,3 @@
-package ExercisingFromPacktAndOnline;
-
 public class ConvertingStringToInt {
     public static void main(String[] args){
         if(args.length > 0){
