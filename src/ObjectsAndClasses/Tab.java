@@ -1,4 +1,4 @@
-package ExercisingFromPacktAndOnline;
+package ObjectsAndClasses;
 
 public class Tab extends Computer {
     private double screenSize;

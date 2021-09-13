@@ -1,4 +1,4 @@
-package ExercisingFromPacktAndOnline;
+package ObjectsAndClasses;
 
 public class ComputerMain {
     public static void main(String[] args) {

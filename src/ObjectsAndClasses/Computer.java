@@ -1,4 +1,4 @@
-package ExercisingFromPacktAndOnline;
+package ObjectsAndClasses;
 
 public class Computer {
     private int cpuSpeed;
