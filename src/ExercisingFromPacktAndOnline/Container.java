@@ -1,7 +1,7 @@
 package ExercisingFromPacktAndOnline;
 
 public class Container {
-    private class InnerContent {
+    private static class InnerContent {
         public void print() {
             System.out.println("This is an inner class.");
         }
