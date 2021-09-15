@@ -20,8 +20,8 @@ public class CollectionsSet {
         Integer[] numbers2 = new Integer[]{7, 12, 14, 79};
 
         //Declaration and initialisation of Sets
-        Set<Integer> mySetInt1 = new HashSet<>();
-        Set<Integer> mySetInt2 = new HashSet<>();
+        Set<Integer> mySetInt1 = new TreeSet<>();
+        Set<Integer> mySetInt2 = new TreeSet<>();
 
         //Filling sets up
         Collections.addAll(mySetInt1, numbers1);
@@ -35,5 +35,8 @@ public class CollectionsSet {
         mySetInt1.addAll(mySetInt2);
         System.out.println(mySetInt1);
 
+        //Intersecting
+        mySetInt1.retainAll(mySetInt2);
+        System.out.println(mySetInt1);
     }
 }
