@@ -11,8 +11,8 @@ sample arg[0] = {1,2,3,4,5}, arg[1] = 3
 function returns {0,1}.
 */
 
-public class Arguments {
-    public static void main(String[] args) {
-        int b;
-        }
-    }
+//public class Arguments {
+//    public static void main(String[] args) {
+//        int b;
+//        }
+//    }
