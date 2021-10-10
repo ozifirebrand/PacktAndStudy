@@ -25,7 +25,7 @@ public class AirlineReservation {
         return isFirstClassSeatBooked;
     }
 
-    public boolean isEconomySeatBooked() {
+    public boolean economySeatIsBooked() {
         return isEconomySeatBooked;
     }
 
