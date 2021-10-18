@@ -1,47 +1,32 @@
 package SelfWork;
 
 public class AirlineReservation {
-    private final Seat seats = new Seat();
-    private  boolean isFirstClassSeatBooked;
-    private boolean isEconomySeatBooked;
-    private int seatNumber =0;
-    public Seat  getSeats() {
+    private final Seat[] seats = new Seat[10];
+    private int seatNumber = 0;
+    private boolean isFirstClass;
+
+
+    public Seat[] getSeats() {
         return seats;
     }
 
     public int getNumberOfSeats() {
-        return 10;
+        return seats.length;
     }
 
     public void bookSeat(int seatType) {
-        increaseSeatNumber();
-        if ( seatType==1 ) bookFirstClassSeat(seatType);
-        if ( seatType == 2 ) bookEconomySeat(seatType);
+        seatNumber += 1;
+        Seat seat = new Seat();
+        seats[seatNumber - 1] = seat;
     }
 
-    private void increaseSeatNumber() {
-        seatNumber +=1;
+    public boolean isItFirstClassSeat(int seatType) {
+        if ( seatNumber < 6 )
+            isFirstClass = true;
+        return isFirstClass;
     }
 
-    //todo REFACTOR THESE METHODS
-
-    private void bookFirstClassSeat(int seatType) {
-        boolean seatIsGreaterThan0 = seatNumber > 0;
-        boolean seatIsLesserThan6 = seatNumber < 6;
-        if ( seatIsGreaterThan0 && seatIsLesserThan6 )
-        isFirstClassSeatBooked= seatType == 1;
+    public Seat[] getReserveSeat() {
+        return seats;
     }
-
-    private void bookEconomySeat(int seatType) {
-        isEconomySeatBooked = seatType==2;
-    }
-
-    public boolean firstClassSeatIsBooked() {
-        return isFirstClassSeatBooked;
-    }
-
-    public boolean economySeatIsBooked() {
-        return isEconomySeatBooked;
-    }
-
 }
