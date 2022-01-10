@@ -1,4 +1,4 @@
-package SelfWork.ObjectOrientedProgramming;
+package SelfWork.Oop.WaterPackage;
 
 public class BottleWater {
     private final Water water = new Water();
