@@ -1,7 +1,7 @@
 package SelfWork.Oop.Duck;
 
 public abstract class Duck {
-    Flyable flyBehaviour;
+    FlyBehaviour flyBehaviour;
     QuackBehaviour quackBehaviour;
 
     public void performQuack(){
