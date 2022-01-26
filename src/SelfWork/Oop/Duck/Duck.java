@@ -1,11 +1,23 @@
 package SelfWork.Oop.Duck;
 
 public abstract class Duck {
-    private Flyable flyable;
-    private Quackable quackable;
+    Flyable flyBehaviour;
+    QuackBehaviour quackBehaviour;
 
-    public void quack(){
+    public void performQuack(){
+        quackBehaviour.quack();
+    }
 
+    public void swim(){
+
+    }
+
+    public void display(){
+
+    }
+
+    public void performFly(){
+        flyBehaviour.fly();
     }
 
 }
