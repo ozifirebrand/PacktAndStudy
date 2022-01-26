@@ -1,6 +1,6 @@
 package SelfWork.Oop.Duck;
 
-public interface Flyable {
+public interface FlyBehaviour {
 
     void fly();
 }
