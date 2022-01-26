@@ -1,5 +1,5 @@
 package SelfWork.Oop.Duck;
 
-public interface Quackable {
+public interface QuackBehaviour {
     void quack();
 }
