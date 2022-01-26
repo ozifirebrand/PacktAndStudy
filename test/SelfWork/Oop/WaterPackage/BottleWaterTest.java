@@ -1,4 +1,4 @@
-package SelfWork.ObjectOrientedProgramming;
+package SelfWork.Oop.WaterPackage;
 
 import org.junit.jupiter.api.Test;
 
